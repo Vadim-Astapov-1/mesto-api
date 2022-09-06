@@ -3,8 +3,6 @@ const bcrypt = require('bcryptjs');
 const validator = require('validator');
 const UnauthorizedError = require('../errors/unauthorized-error');
 
-// const regex = /^https?:\/\/[a-z0-9.-]+(\/\S+)*/gi;
-
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
